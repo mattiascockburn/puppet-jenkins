@@ -19,7 +19,7 @@ Facter.add(:jenkins_version) do
   setcode do
     libdir = case Facter.value('os.family')
              when 'Debian'
-               '/usr/share/jenkins'
+               '/usr/share/java/jenkins'
              when 'Archlinux'
                '/usr/share/java/jenkins'
              else

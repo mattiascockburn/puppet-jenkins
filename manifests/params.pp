@@ -39,7 +39,7 @@ class jenkins::params {
   case $facts['os']['family'] {
     'Debian': {
       $repo                 = true
-      $libdir               = '/usr/share/jenkins'
+      $libdir               = '/usr/share/java'
       $package_provider     = 'dpkg'
       $service_provider     = undef
       $sysconfdir           = '/etc/default'
